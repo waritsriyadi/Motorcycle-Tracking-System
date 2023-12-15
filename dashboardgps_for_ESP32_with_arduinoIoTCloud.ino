@@ -18,8 +18,8 @@
 #include <HTTPClient.h>
 #include "thingProperties.h"
 #include <ArduinoJson.h>
-const char *thinkSpeakChannelId = "2374052";
-const char *thinkSpeakApiKey = "OV1HKGD2JYS96CIG";
+const char *thinkSpeakChannelId = "YOUR_CHANNEL_ID";
+const char *thinkSpeakApiKey = "YOUR_API_KEY";
 
 void readDataFromThingSpeak() {
   // Your existing code to make a GET request to ThingSpeak
