@@ -3,12 +3,12 @@
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
 
-const char *ssid = "Meh";
-const char *password = "PlkQas132";
-const char *thinkSpeakChannelId = "2374052";
-const char *thinkSpeakApiKey = "OV1HKGD2JYS96CIG";
-const char *telegramBotToken = "6822136070:AAFgKHq_yOyuLC9n5_Eq_n9u1PZ9MmTnDQo";
-const char *telegramChatId = "6289052732";
+const char *ssid = "YOUR_WIFI_SSID";
+const char *password = "YOUR_WIFI_PASSWORD";
+const char *thinkSpeakChannelId = "YOUR_CHANNELID";
+const char *thinkSpeakApiKey = "YOUR_TS_API_KEY";
+const char *telegramBotToken = "YOUR_TELEGRAM_BOT_TOKEN";    // Example: 1243465387:AAdHAHq_yOyB2xSQn5_Eq_n9u1PBsSkDQo
+const char *telegramChatId = "YOUR_CHAT_ID";
 int botRequestDelay = 100;
 unsigned long lastTimeBotRan;
 float currentLat = 0.0;
@@ -84,7 +84,7 @@ void handleNewMessages(const String &text) {
     sendTelegramMessage(welcomeMessage);
   } else if (text == "/latitude") {
     sendTelegramMessage("latitude: " + String(currentLat, 6));
-  } else if (text == "/Longitude") {
+  } else if (text == "/longitude") {
     sendTelegramMessage("longitude: " + String(currentLng, 6));
   } else if (text == "/lokasi") {
     String locationMessage = "Lokasi : https://www.google.com/maps/@" + String(currentLat, 6) + "," + String(currentLng, 6) + ",21z?entry=ttu";
