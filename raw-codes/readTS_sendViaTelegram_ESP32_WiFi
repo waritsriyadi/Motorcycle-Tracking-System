@@ -3,7 +3,7 @@
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
 
-const char *ssid = "Meh";
+const char *ssid = "Y";
 const char *password = "PlkQas132";
 const char *thinkSpeakChannelId = "2374052";
 const char *thinkSpeakApiKey = "OV1HKGD2JYS96CIG";
