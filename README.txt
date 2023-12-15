@@ -6,6 +6,10 @@ Hopefully this project will help you all to deploy similar project like me.
 It's actually just a GPS Tracker for motorcycle.
 I use GPS UBlox Neo-6M to receive Latitude and Longitude, then the data will be transfered to cloud website with GSM module, in this case I use ThinkSpeak and WebHost000.
 
+You can see my done cloud project here:
+https://motorcylealertsystem.000webhostapp.com/
+https://thingspeak.com/channels/2374052
+
 Things you need before doing this project:
 1. Jumper Wires
 2. GPS UBlox Neo-6M
