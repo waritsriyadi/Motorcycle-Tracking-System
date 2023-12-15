@@ -12,7 +12,7 @@ const String THINKSPEAK_API_KEY = "YOUR_THINGSPEAK_API_KEY";
 const String THINKSPEAK_CHANNEL_ID = "YOUR_THINGSPEAK_CHANNEL_ID";
 const int SSL_PORT = 443;
 
-char apn[] = "m2mautotronic";
+char apn[] = "YOUR_APN_HERE";
 char user[] = "";
 char pass[] = "";
 
