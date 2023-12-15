@@ -3,13 +3,13 @@
 #include <SoftwareSerial.h>
 
 // Your ThinkSpeak channel details
-String channelId = "2381662";
-String readApiKey = "YRCSLQV7MLIE2EQE";
+String channelId = "YOUR_CHANNELID";
+String readApiKey = "YOUR_TS_API_KEY";
 
 // TinyGsmClient sim800l
-#define APN "m2mautotronic"
-#define SIM800_RX 10
-#define SIM800_TX 11
+#define APN "YOURAPNHERE"
+#define SIM800_RX 10             //TX to PIN 10 at Microcontroller
+#define SIM800_TX 11             //RX to PIN 11 at Microcontroller
 int PIN_BUZZER = A5;
 SoftwareSerial sim800_serial(SIM800_RX, SIM800_TX);
 TinyGsm gsm_client(sim800_serial);
