@@ -3,11 +3,11 @@
 #include <ArduinoIoTCloud.h>
 #include <Arduino_ConnectionHandler.h>
 
-const char DEVICE_LOGIN_NAME[]  = "d266202f-264b-46b9-8e1c-3e8785f8ec03";
+const char DEVICE_LOGIN_NAME[]  = "YOUR_DEVICE_SECRET_CODE";
 
-const char SSID[]               = "Meh";    // Network SSID (name)
-const char PASS[]               = "PlkQas132";    // Network password (use for WPA, or use as key for WEP)
-const char DEVICE_KEY[]         = "J?G2PzdFur9mRmCPhFtkPQbrd";    // Secret device password
+const char SSID[]               = "YOUR_WIFI_SSID";    // Network SSID (name)
+const char PASS[]               = "YOUR_WIFI_PASSWORD";    // Network password (use for WPA, or use as key for WEP)
+const char DEVICE_KEY[]         = "YOUR_SECRET_KEY_ARDUINO_IOT";    // Secret device password
 
 void onLatitudeChange();
 void onLongitudeChange();
