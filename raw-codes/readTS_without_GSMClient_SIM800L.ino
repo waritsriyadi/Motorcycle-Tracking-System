@@ -4,7 +4,7 @@
 SoftwareSerial sim800l(10, 11);  // RX, TX
 
 String url = "api.thingspeak.com";
-String writeAPIKey = "YRCSLQV7MLIE2EQE";
+String writeAPIKey = "YOUR_API_KEY";
 unsigned long lastCheckTime = 0;  // The last time the ThingSpeak data was checked
 unsigned long checkInterval = 2000;
 
@@ -28,7 +28,7 @@ void connectToGPRS() {
   sim800l.println("AT+CGATT=1");
   delay(2000);
 
-  sim800l.println("AT+CGDCONT=1,\"IP\",\"YRCSLQV7MLIE2EQE\"");
+  sim800l.println("AT+CGDCONT=1,\"IP\",\"YOUR_API_KEY\"");
   delay(5000);
 
   while (sim800l.available()) {
@@ -42,7 +42,7 @@ void connectToGPRS() {
   sim800l.println(cmd);
   delay(2000);
 
-  String getRequest = "GET /channels/2381662/feeds/last.json?api_key=YRCSLQV7MLIE2EQE HTTP/1.1";
+  String getRequest = "GET /channels/YOUR_CHANNEL_ID/feeds/last.json?api_key=YOUR_API_KEY HTTP/1.1";
   getRequest += "\r\nHost: ";
   getRequest += url;
   getRequest += "\r\nConnection: close";
