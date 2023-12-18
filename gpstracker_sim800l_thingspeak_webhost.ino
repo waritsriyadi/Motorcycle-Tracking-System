@@ -1,4 +1,4 @@
-// THIS PROJECT MADE BY github.com/waritsriyadi
+// THIS PROJECT WAS MADE BY github.com/waritsriyadi
 
 #include <SoftwareSerial.h>
 #include <TinyGPS++.h>
@@ -127,4 +127,4 @@ void sendATcommand(const char* command, const char* expectedResponse, int timeou
   }
 }
 
-// THIS PROJECT MADE BY github.com/waritsriyadi
+// THIS PROJECT WAS MADE BY github.com/waritsriyadi
